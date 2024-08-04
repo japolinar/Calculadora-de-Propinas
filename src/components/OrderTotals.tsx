@@ -27,7 +27,7 @@ export const OrderTotals = ({order, tip, placeOrder}: OrderTotalProps) => {
             </p>
         </div>
         <button
-            className=" bg-black text-white font-bold uppercase w-full p-3 mt-10 rounded-lg hover:bg-blue-500 disabled:opacity-10 disabled:hover:bg-black"
+            className=" bg-sky-900 text-white font-bold uppercase w-full p-3 mt-10 rounded-lg hover:bg-sky-700 disabled:opacity-10 disabled:hover:bg-black"
             disabled={ totalAmount === 0 }
             onClick={() => placeOrder()}
         >

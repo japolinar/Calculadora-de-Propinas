@@ -10,12 +10,11 @@ import { TipPercentageForm } from './components/TipPercentageForm';
 function App() {
  
   //console.log(menuItems);
-  const {order, addItem, removeItem, tip, setTip, placeOrder } = useOrder()
-
+  const {order, addItem, removeItem, tip, setTip, placeOrder } = useOrder()  
 
   return (
     <div className=' bg-gray-100'>
-      <header className=' bg-blue-500 py-6'>
+      <header className=' bg-sky-700 py-6'>
         <div className=" flex justify-center">    
           <img src={viteLogo} className="logo" alt="Vite logo" />
           <h1 className=' text-3xl text-white text-center m-3 uppercase font-serif'>Calculadora de Propinas y Consumo</h1>
@@ -23,7 +22,7 @@ function App() {
         </div>
       </header>
 
-      <main className=' max-w-7xl py-12 grid md:grid-cols-2'>
+      <main className=' max-w-7xl py-12 grid md:grid-cols-2 container mx-auto'>
         <div className=' p-5'>
           <h2 className=' text-4xl font-black'>Menu</h2>
           <div className=' space-y-3 mt-10'>
@@ -38,6 +37,7 @@ function App() {
         </div>
 
         <div className=' border border-dashed border-slate-300 p-5 rounded-lg space-y-10'>
+          <h2 className=' font-black text-4xl'>Consumo</h2>
           {order.length ? (
             <>
               <OrderContents
@@ -57,7 +57,7 @@ function App() {
               />          
             </>
             ) : 
-            <p className=" text-center">La orden esta vacia</p>
+            <p className=" bg-yellow-700 text-center text-white p-2 uppercase font-bold rounded-xl">La orden esta vacia</p>
           }
           
         </div>

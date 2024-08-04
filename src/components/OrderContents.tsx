@@ -8,8 +8,7 @@ type OrderItemProps = {
 
 export const OrderContents = ({order, removeItem}: OrderItemProps) => {
   return (
-    <div>
-        <h2 className=' font-black text-4xl'>Consumo</h2>
+    <div>        
         <div className=" space-y-3  mt-10">
             {order.map(item => (
                     <div 
