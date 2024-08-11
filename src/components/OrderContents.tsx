@@ -16,7 +16,10 @@ export const OrderContents = ({order, removeItem}: OrderItemProps) => {
                         key={item.id}
                     >
                         <div>
-                            <p className=" text-lg">{item.name} - {formatCurrency(item.price)}</p>
+                            <div className=" flex">
+                                <img className=" max-w-8 mx-2" src={item.imagen} alt="imagen" />
+                                <p className=" text-lg">{item.name} - {formatCurrency(item.price)}</p>
+                            </div>
                             <p className=" font-black">Cantidad: {item.quantity} - {formatCurrency(item.price * item.quantity)} </p>
                         </div>
 

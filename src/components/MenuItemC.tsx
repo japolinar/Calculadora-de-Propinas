@@ -11,8 +11,11 @@ export const MenuItemC = ({item, addItem}: MenuItemProps) => {
       className=" border-2 border-blue-200 w-full p-3 flex justify-between rounded-md hover:bg-sky-600 hover:text-white"
       onClick={() => addItem(item)}
     >
-    <p>{item.name}</p>
-    <p className=" font-black">$ {item.price} </p>
+      <div className=" flex">
+        <img className=" max-w-8 mx-2" src={item.imagen} alt="iamgen" />
+        <p>{item.name}</p>
+      </div>
+      <p className=" font-black">$ {item.price} </p>
     </button>
   )
 }

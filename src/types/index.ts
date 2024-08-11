@@ -1,7 +1,8 @@
 export type MenuItem ={
     id: number,
     name: string,
-    price: number
+    price: number,
+    imagen: string
 }
 
 export type OrderItem = MenuItem & {
