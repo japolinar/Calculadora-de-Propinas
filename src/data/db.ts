@@ -6,7 +6,7 @@ export const menuItems: MenuItem[] = [
       "id": 1,
       "name": "Pizza a la Leña Chica",
       "price": 30,
-      "imagen": "./src/assets/img/pizza_02.svg"
+      "imagen": "img/pizza_02.svg"
     },
     {
       "id": 2,
